@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Park Portais do Roncador | Portal de Turismo</title>
+  <meta name="description" content="Park Portais Roncador: experiências de aventura, bem-estar e misticismo no coração da natureza. Retiros espirituais, trilhas selvagens e cura em portais sagrados." />
+  
+  <link rel="icon" type="image/x-icon" href="assets/hero/logo.ico" />
+  <link rel="shortcut icon" href="assets/hero/logo.ico" />
+  
+  <meta property="og:title" content="Park Portais Roncador | Portal de Turismo Místico" />
+  <meta property="og:description" content="Descubra experiências de aventura, bem-estar e misticismo no coração da natureza. Retiros espirituais, trilhas selvagens e portais sagrados." />
+  <meta property="og:image" content="assets/hero/logo.png" />
+  <meta property="og:url" content="https://parkportaisroncador.com" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Park Portais Roncador" />
+  <meta name="twitter:description" content="Experiências de aventura, bem-estar e misticismo. Reserve sua jornada transformadora." />
+  <meta name="twitter:image" content="assets/hero/logo.png" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="header">
+    <div class="nav-wrap container">
+      <a href="#" class="brand">
+        <div class="logo-container">
+          <img id="brandLogo" class="brand-logo" src="assets/hero/logo.png" alt="Logo Park Portais Roncador" onerror="handleLogoError(this)" />
+        </div>
+        <span class="brand-text">Park Portais Roncador</span>
+      </a>
+      
+      <nav class="menu-links" aria-label="Menu principal">
+        <a href="#experiencias">Experiências</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a href="#contato" class="btn-reserve">Reserve sua Jornada</a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <div></div><div></div><div></div>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-label="Menu mobile">
+    <a href="#experiencias">Experiências</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#localizacao">Localização</a>
+    <a href="#contato">Contato</a>
+    <a href="#contato" class="gold-btn" style="text-align:center;">Reserve sua Jornada</a>
+  </div>
+
+  <section id="hero">
+    <div class="hero-bg" id="heroBg" role="img" aria-label="Paisagem de Park Portais Roncador"></div>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <div class="hero-tag">BEM-VINDO AO CORAÇÃO DO</div>
+      <h1 class="hero-title">Park Portais Roncador</h1>
+      <p class="hero-sub">Onde a natureza selvagem encontra a cura ancestral</p>
+      <div class="hero-buttons">
+        <a href="#experiencias" class="gold-btn">Explorar Experiências</a>
+        <button class="outline-btn" id="playVideoBtn"><span>▶</span> Assista ao Vídeo</button>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat" data-target="47"><strong>0</strong> Expedições</div>
+        <div class="hero-stat" data-target="1200"><strong>0</strong> Visitantes</div>
+        <div class="hero-stat" data-target="12"><strong>0</strong> Portais</div>
+      </div>
+    </div>
+    <div class="scroll-down" aria-hidden="true"></div>
+  </section>
+
+  <section id="sobre" class="container fade-up">
+    <div class="content">
+      <div class="about-text">
+        <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.8rem;font-size:0.99rem;color:var(--gold)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 12c2 8 10 8 12 0C16 4 8 4 6 12Z" stroke="#c9a84c" stroke-width="1.6" fill="none"></path>
+            <path d="M5 9c3 4 7 4 11 0" stroke="#c9a84c" stroke-width="1.6" fill="none"></path>
+          </svg>
+          <strong>Um Lugar Fora do Tempo</strong>
+        </div>
+        <h2>Um Lugar Fora do Tempo</h2>
+        <p>
+          No interior místico onde o cerrado abraça florestas ancestrais, o destino convida a uma imersão profunda
+          entre trilhas secretas e cachoeiras que ecoam lendas. Aqui, cada passo ativa energia telúrica e cura o corpo
+          e a alma com elementos naturais e saberes indígenas.
+        </p>
+        <p>
+          Descubra sítios arcanos, retiros de bem-estar e cerimônias sob céus estrelados, em uma jornada que equilibra
+          rusticidade, aventura e misticismo regional. Um refúgio para viajantes audazes e corações em busca de renovação.
+        </p>
+        <div class="info-icons">
+          <span>🏔 Altitude</span>
+          <span>🌿 Bioma</span>
+          <span>⭐ Avaliação média</span>
+        </div>
+      </div>
+      <div class="sobre-img">
+        <img src="https://picsum.photos/600/700?random=10" loading="lazy" alt="Paisagem de natureza selvagem" />
+      </div>
+    </div>
+  </section>
+
+  <section id="experiencias" class="container fade-up">
+    <h2 class="section-title">Destaques das Experiências</h2>
+    <div class="decor-line"></div>
+    <div class="experiences-grid">
+      <article class="exp-card exp-1" data-tilt>
+        <span class="exp-badge">Aventura</span>
+        <h3>Expedições na Natureza</h3>
+        <p class="desc">Trilhas selvagens, cachoeiras cristalinas, camping rústico e rapel em paredões secretos.</p>
+        <ul class="check-list">
+          <li>Trilha guiada</li>
+          <li>Cachoeira escondida</li>
+          <li>Acampamento ao luar</li>
+          <li>Rapel técnico</li>
+        </ul>
+        <button class="btn-sec">Ver Roteiros</button>
+      </article>
+      <article class="exp-card exp-2" data-tilt>
+        <span class="exp-badge">⭐ Mais Procurado</span>
+        <h3>Cura Tonal & Bem-Estar</h3>
+        <p class="desc">Banhos de gongo, meditação guiada, terapias com cristais e retiros de silêncio.</p>
+        <ul class="check-list">
+          <li>Gongoterapia sagrada</li>
+          <li>Meditação ao pôr do sol</li>
+          <li>Práticas com cristais nativos</li>
+          <li>Jornadas de silêncio</li>
+        </ul>
+        <button class="btn-sec">Descobrir a Cura</button>
+      </article>
+      <article class="exp-card exp-3" data-tilt>
+        <span class="exp-badge">Místico</span>
+        <h3>Portais Sagrados</h3>
+        <p class="desc">Sítios arqueológicos, geoglifos ancestrais, cerimônias xamânicas e observação de constelações.</p>
+        <ul class="check-list">
+          <li>Visita a geoglifos</li>
+          <li>Cerimônia com pajé</li>
+          <li>Percurso astronômico</li>
+          <li>Arte rupestre</li>
+        </ul>
+        <button class="btn-sec">Acessar os Portais</button>
+      </article>
+    </div>
+  </section>
+
+  <section id="galeria" class="container fade-up">
+    <h2 class="section-title">Sinta a Energia do Lugar</h2>
+    <div class="filters">
+      <button class="gallery-filter active" data-category="todos">Todos</button>
+      <button class="gallery-filter" data-category="natureza">Natureza</button>
+      <button class="gallery-filter" data-category="cura">Cura</button>
+      <button class="gallery-filter" data-category="mistic">Místico</button>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item" data-category="natureza">
+        <img src="https://picsum.photos/400/500?random=11" loading="lazy" alt="Natureza selvagem" />
+        <div class="overlay"><p>🌿 Vida Silvestre</p></div>
+      </div>
+      <div class="gallery-item" data-category="cura">
+        <img src="https://picsum.photos/400/300?random=12" loading="lazy" alt="Banho de gongo" />
+        <div class="overlay"><p>🧘 Cura Tonal</p></div>
+      </div>
+      <div class="gallery-item" data-category="mistic">
+        <img src="https://picsum.photos/400/420?random=13" loading="lazy" alt="Portal sagrado" />
+        <div class="overlay"><p>✨ Portal Místico</p></div>
+      </div>
+      <div class="gallery-item" data-category="natureza">
+        <img src="https://picsum.photos/400/450?random=14" loading="lazy" alt="Cachoeira imersiva" />
+        <div class="overlay"><p>🌊 Cachoeira Secreta</p></div>
+      </div>
+      <div class="gallery-item" data-category="cura">
+        <img src="https://picsum.photos/400/380?random=15" loading="lazy" alt="Meditação na floresta" />
+        <div class="overlay"><p>🌙 Meditação Noturna</p></div>
+      </div>
+      <div class="gallery-item" data-category="mistic">
+        <img src="https://picsum.photos/400/510?random=16" loading="lazy" alt="Constelações ancestrais" />
+        <div class="overlay"><p>🌌 Constelações</p></div>
+      </div>
+      <div class="gallery-item" data-category="natureza">
+        <img src="https://picsum.photos/400/340?random=17" loading="lazy" alt="Trilha na selva" />
+        <div class="overlay"><p>🌾 Trilha Sagrada</p></div>
+      </div>
+      <div class="gallery-item" data-category="cura">
+        <img src="https://picsum.photos/400/520?random=18" loading="lazy" alt="Ritual de cura" />
+        <div class="overlay"><p>🕯️ Ritual de Cura</p></div>
+      </div>
+      <div class="gallery-item" data-category="mistic">
+        <img src="https://picsum.photos/400/320?random=19" loading="lazy" alt="Geoglifo ancestral" />
+        <div class="overlay"><p>🌀 Geoglifo Ancestral</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização de galeria">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Fechar">✕</button>
+      <button class="lightbox-btn lightbox-prev" aria-label="Anterior">‹</button>
+      <img src="" alt="Imagem ampliada" id="lightboxImage" />
+      <button class="lightbox-btn lightbox-next" aria-label="Próximo">›</button>
+    </div>
+  </div>
+
+  <section id="depoimentos" class="container fade-up">
+    <h2 class="section-title">Vozes de Quem Viveu</h2>
+    <div class="carousel-wrap">
+      <div class="carousel-track" id="carouselTrack">
+        <article class="slide active">
+          <div class="slide-img">
+            <img src="https://picsum.photos/100/100?random=21" alt="Cliente 1">
+          </div>
+          <div class="slide-content">
+            <h3>Letícia - São Paulo</h3>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>Uma viagem transformadora. Retiros, caminhadas e cerimônias xamânicas me reconectaram com meu propósito.</p>
+          </div>
+        </article>
+        <article class="slide">
+          <div class="slide-img">
+            <img src="https://picsum.photos/100/100?random=22" alt="Cliente 2">
+          </div>
+          <div class="slide-content">
+            <h3>Marcos - Rio de Janeiro</h3>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>O acampamento sob estrelados e o banho de gongo foram espetaculares. Equipe atenciosa e local mágico.</p>
+          </div>
+        </article>
+        <article class="slide">
+          <div class="slide-img">
+            <img src="https://picsum.photos/100/100?random=23" alt="Cliente 3">
+          </div>
+          <div class="slide-content">
+            <h3>Ana - Curitiba</h3>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>Experiência mística profunda, com guias sensíveis e ambientes que acariciam a alma. Recomendo 100%.</p>
+          </div>
+        </article>
+        <article class="slide">
+          <div class="slide-img">
+            <img src="https://picsum.photos/100/100?random=24" alt="Cliente 4">
+          </div>
+          <div class="slide-content">
+            <h3>Rafael - Brasília</h3>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>Encontrei paz e energia em cada ritual. A sensação de estar num outro mundo é real.</p>
+          </div>
+        </article>
+      </div>
+      <div class="testimonial-dots" id="testimonialDots"></div>
+    </div>
+  </section>
+
+  <section id="localizacao" class="container fade-up">
+    <h2 class="section-title">Encontre Seu Caminho</h2>
+    <div class="location-wrap">
+      <div class="map-card">
+        <svg viewBox="0 0 860 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa conceitual">
+          <defs>
+            <linearGradient id="riverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#6fb8ff" />
+              <stop offset="100%" stop-color="#0c74d8" />
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="860" height="520" rx="18" fill="#1a3a1a" />
+          <path d="M70,440 C180,350 260,310 360,390 S540,460 650,380" fill="none" stroke="url(#riverGrad)" stroke-width="12" stroke-linecap="round" />
+          <path d="M90,80 L210,110 L320,60 L420,100 L520,40 L620,90" fill="none" stroke="#d4c5a9" stroke-width="9" stroke-dasharray="12 10" />
+          <circle cx="160" cy="110" r="12" fill="#f5f0e8" />
+          <text x="175" y="115" fill="#fff" font-size="16" font-family='Inter'>Cidade A</text>
+          <circle cx="540" cy="170" r="12" fill="#f5f0e8" />
+          <text x="555" y="175" fill="#fff" font-size="16" font-family='Inter'>Cidade B</text>
+          <circle cx="350" cy="390" r="16" fill="#c9a84c" />
+          <text x="372" y="394" fill="#fff" font-size="16" font-family='Inter' font-weight="600">Destino</text>
+          <circle cx="350" cy="390" r="10" fill="#ffeca1">
+            <animate attributeType="XML" attributeName="r" from="10" to="18" dur="1s" repeatCount="indefinite" />
+            <animate attributeType="XML" attributeName="opacity" from="0.7" to="0.15" dur="1s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+        <div class="legend">Mapa conceitual: rios azuis, estradas douradas e destino místico em pulso.</div>
+      </div>
+      <div class="tabs">
+        <div class="tab-btns">
+          <button class="tab-btn active" data-tab="avião">✈ De Avião</button>
+          <button class="tab-btn" data-tab="carro">🚗 De Carro</button>
+        </div>
+        <div class="tab-content" id="tabAvião">
+          <p><strong>Aeroporto mais próximo:</strong> Aeroporto Regional de Tarumã (85 km)</p>
+          <p><strong>Tempo estimado:</strong> 1h45m via BR-153</p>
+          <p><strong>Companhias:</strong> Azul, Latam, Gol</p>
+        </div>
+        <div class="tab-content" id="tabCarro" style="display:none;">
+          <p><strong>Rodovias:</strong> BR-153 e GO-060</p>
+          <p><strong>Pontos de referência:</strong> Pedra do Santuário, Mirante do Sol</p>
+          <p><strong>Pedágio estimado:</strong> R$ 52,00 (ida)</p>
+        </div>
+        <div class="tip-card">
+          <i>☀️</i>
+          <p>Melhor época: abril a junho e setembro a novembro, com clima fresco, céu limpo e trilhas acessíveis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pacotes" class="container fade-up">
+    <h2 class="section-title">Pacotes</h2>
+    <div class="packs-grid">
+      <article class="pack-card">
+        <div class="label">Fim de Semana Selvagem</div>
+        <h3>2 Noites</h3>
+        <div class="price">R$ 1.790/pessoa</div>
+        <ul>
+          <li>Transporte local</li>
+          <li>2 trilhas guiadas</li>
+          <li>Jantar típico</li>
+          <li>Noite de fogueira</li>
+        </ul>
+        <button class="pack-btn">Reserve Agora</button>
+      </article>
+      <article class="pack-card">
+        <div class="label">Mais Popular</div>
+        <h3>Retiro Completo</h3>
+        <div class="price">R$ 3.950/pessoa</div>
+        <ul>
+          <li>5 noites em chalé</li>
+          <li>Terapia com cristais</li>
+          <li>2 cerimônias xamânicas</li>
+          <li>Observação de estrelas</li>
+        </ul>
+        <button class="pack-btn">Reserve Agora</button>
+      </article>
+      <article class="pack-card">
+        <div class="label">Exclusivo</div>
+        <h3>Imersão Total</h3>
+        <div class="price">R$ 6.980/pessoa</div>
+        <ul>
+          <li>10 noites de experiência</li>
+          <li>Exploração de portais</li>
+          <li>Ritual privativo</li>
+          <li>Coach holístico</li>
+        </ul>
+        <button class="pack-btn">Reserve Agora</button>
+      </article>
+    </div>
+    <p class="pack-note">*Personalizamos sua jornada. Consulte-nos.</p>
+  </section>
+
+  <section id="contato" class="container fade-up">
+    <h2 class="section-title">Contato</h2>
+    <div class="contact-wrap">
+      <div class="form-card">
+        <h2>Inicie Sua Jornada</h2>
+        <div id="successMsg" class="success-message">Obrigado! Sua mensagem foi enviada com sucesso. Em breve entraremos em contato.</div>
+        <form id="contactForm" novalidate>
+          <div class="field-group">
+            <input type="text" id="name" required placeholder=" " />
+            <label for="name">Nome</label>
+            <div class="error-msg">Campo obrigatório</div>
+          </div>
+          <div class="field-group">
+            <input type="email" id="email" required placeholder=" " />
+            <label for="email">E-mail</label>
+            <div class="error-msg">Digite um email válido</div>
+          </div>
+          <div class="field-group">
+            <input type="tel" id="phone" required placeholder=" " pattern="\d{8,15}" />
+            <label for="phone">Telefone/WhatsApp</label>
+            <div class="error-msg">Digite um telefone válido</div>
+          </div>
+          <div class="field-group">
+            <select id="experience" required>
+              <option value="" disabled selected></option>
+              <option value="aventura">Aventura</option>
+              <option value="cura">Cura</option>
+              <option value="misticismo">Misticismo</option>
+              <option value="imersaototal">Imersão Total</option>
+            </select>
+            <label for="experience">Tipo de Experiência</label>
+            <div class="error-msg">Selecione uma opção</div>
+          </div>
+          <div class="field-group">
+            <input type="date" id="date" required />
+            <label for="date">Data Desejada</label>
+            <div class="error-msg">Informe uma data</div>
+          </div>
+          <div class="field-group">
+            <textarea id="message" required placeholder=" "></textarea>
+            <label for="message">Mensagem</label>
+            <div class="error-msg">Campo obrigatório</div>
+          </div>
+          <button type="submit" class="submit-btn" id="submitBtn">
+            Iniciar Minha Jornada 🧭
+          </button>
+        </form>
+      </div>
+
+      <aside class="contact-card">
+        <h2>Contato Rápido</h2>
+        <ul class="contact-list">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#c9a84c" viewBox="0 0 24 24"><path d="M2 2h20v20H2z" fill="none"/><path d="M12 12l-9.3-6.8v-.2L12 12v10l9.3-6.8v-.2z"/></svg>
+            <strong>WhatsApp:</strong> <a class="whatsapp-btn" href="https://wa.me/5563999999999" target="_blank" rel="noopener">Converse Agora</a>
+          </li>
+          <li>
+            <svg width="16" height="16" fill="#c9a84c" viewBox="0 0 24 24"><path d="M6.6 7.6l. . ."></path></svg>
+            <strong>Instagram:</strong> <a href="https://instagram.com/parkportaisroncador" target="_blank" rel="noopener">@parkportaisroncador</a>
+          </li>
+          <li>
+            <strong>Email:</strong> <a href="mailto:contato@parkportaisroncador.com.br?subject=Reserva%20Park%20Portais%20Roncador">contato@parkportaisroncador.com.br</a>
+          </li>
+          <li>
+            <strong>Telefone:</strong> +55 (63) 99999-9999
+          </li>
+          <li>
+            <strong>Compartilhe:</strong> <a class="whatsapp-btn" href="https://wa.me/?text=Visite%20Park%20Portais%20Roncador%20https%3A%2F%2Fparkportaisroncador.com" target="_blank" rel="noopener">WhatsApp</a> • <a href="mailto:?subject=Conheça%20Park%20Portais%20Roncador&body=Veja%20isso%3A%20https%3A%2F%2Fparkportaisroncador.com" target="_blank" rel="noopener">Email</a>
+          </li>
+          <li>
+            <strong>Atendimento:</strong> Seg-Sex 9h-19h
+          </li>
+        </ul>
+
+        <div class="trust-badges">
+          <span>100% Seguro</span>
+          <span>Pagamento Parcelado</span>
+          <span>Cancelamento Flexível</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Park Portais Roncador</h4>
+        <p>Agência boutique de turismo místico de luxo, para almas que buscam transformação.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Links Rápidos</h4>
+        <ul class="footer-links">
+          <li><a href="#experiencias">Experiências</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Experiências</h4>
+        <ul class="footer-links">
+          <li>Expedições</li>
+          <li>Cura Tonal</li>
+          <li>Portais</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>Receba ofertas e rituais exclusivos.</p>
+        <div class="newsletter">
+          <input type="email" id="newsletterEmail" placeholder="Seu e-mail" />
+          <button id="newsletterBtn">Inscrever</button>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bar">
+      <small>&copy; 2026 Território Sagrado. Todos os direitos reservados.</small>
+      <small>Política de privacidade • Termos • Feito com ❤️ para quem busca o extraordinário</small>
+    </div>
+  </footer>
+
+  <button class="top-btn" id="topBtn" aria-label="Voltar ao topo">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
