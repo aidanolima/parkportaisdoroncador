@@ -11,9 +11,14 @@
   
   <meta property="og:title" content="Park Portais Roncador | Em Breve" />
   <meta property="og:description" content="Site em construção. Aguarde nossas novidades." />
-  <meta property="og:image" content="assets/hero/logo.png" />
-  <meta property="og:url" content="https://parkportaisroncador.com" />
+  <meta property="og:image" content="https://parkportaisdoroncador.netlify.app/assets/hero/logo.png" />
+  <meta property="og:url" content="https://parkportaisdoroncador.netlify.app/" />
   <meta property="og:type" content="website" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Park Portais Roncador | Em Breve" />
+  <meta name="twitter:description" content="Site em construção. Aguarde nossas novidades!" />
+  <meta name="twitter:image" content="https://parkportaisdoroncador.netlify.app/assets/hero/logo.png" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -99,7 +104,6 @@
       background-position: center;
       filter: brightness(0.35);
       z-index: 1;
-      /* O SEGREDO DO EFEITO SUAVE ESTÁ AQUI: */
       transition: background-image 1.5s ease-in-out; 
     }
 
@@ -285,29 +289,21 @@
     </div>
   </main>
 
-  <script src="script.js"></script>
-  
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      // 1. Defina aqui os caminhos das suas imagens JPG
       const bgImages = [
+        'assets/hero/hero1.jpg',
         'assets/hero/hero2.jpg',
-        'assets/hero/hero3.jpg',
-        'assets/hero/hero4.jpg',
-        'assets/hero/hero5.jpg',
-        'assets/hero/hero6.jpg',
-        'assets/hero/hero7.jpg'
-        // Se tiver mais, basta adicionar seguindo o padrão, ex: 'assets/hero/hero4.jpg'
+        'assets/hero/hero3.jpg'
       ];
       
       let currentIndex = 0;
       const bgElement = document.getElementById("dynamicBg");
       
-      // 2. Função que troca a imagem a cada 3 segundos (3000ms)
       setInterval(() => {
         currentIndex = (currentIndex + 1) % bgImages.length;
         bgElement.style.backgroundImage = `url('${bgImages[currentIndex]}')`;
-      }, 3000); // <- Você pode alterar o tempo aqui se desejar
+      }, 3000); 
     });
   </script>
 </body>
