@@ -25,8 +25,8 @@
       margin: 0;
       padding: 0;
       width: 100%;
-      height: 100vh; /* Trava a altura para 100% da tela */
-      overflow: hidden; /* Remove a barra de rolagem */
+      height: 100vh;
+      overflow: hidden;
       background-color: #050505;
     }
 
@@ -37,7 +37,7 @@
       left: 0;
       width: 100%;
       display: flex;
-      justify-content: center; /* Centraliza o conteúdo */
+      justify-content: center;
       align-items: center;
       padding: 1.2rem 0;
       background: rgba(5, 5, 5, 0.6);
@@ -94,11 +94,13 @@
     .teaser-bg {
       position: absolute;
       inset: 0;
-      background-image: url('assets/hero/hero1.jpg'); /* Altere se preferir outra imagem de fundo */
+      background-image: url('assets/hero/hero1.jpg'); /* Imagem inicial */
       background-size: cover;
       background-position: center;
       filter: brightness(0.35);
       z-index: 1;
+      /* O SEGREDO DO EFEITO SUAVE ESTÁ AQUI: */
+      transition: background-image 1.5s ease-in-out; 
     }
 
     .teaser-overlay {
@@ -112,12 +114,12 @@
       position: relative;
       z-index: 3;
       display: grid;
-      grid-template-columns: 1.1fr 1fr; /* Mais espaço para o logo */
-      gap: 3rem; /* Espaço entre as colunas */
+      grid-template-columns: 1.1fr 1fr;
+      gap: 3rem;
       width: 100%;
-      max-width: 1300px; /* Área total */
+      max-width: 1300px;
       padding: 0 2rem;
-      margin-top: 60px; /* Compensar o header */
+      margin-top: 60px;
       align-items: center;
     }
 
@@ -129,7 +131,7 @@
 
     .teaser-logo-box img {
       width: 100%;
-      max-width: 600px; /* Aumentado para dar o destaque merecido! */
+      max-width: 600px;
       height: auto;
       filter: drop-shadow(0 0 35px rgba(201, 168, 76, 0.25));
       animation: floatLogo 6s ease-in-out infinite;
@@ -168,27 +170,27 @@
       font-size: clamp(1.1rem, 2vw, 1.3rem);
       color: #d4c5a9;
       font-weight: 500;
-      margin-bottom: 1rem; /* Espaço reduzido para o Instagram */
+      margin-bottom: 1rem;
     }
 
-    /* Estilo para o link do Instagram na página de Teaser */
+    /* Estilo para o link do Instagram */
     .teaser-instagram-link {
       display: inline-flex;
       align-items: center;
       gap: 0.6rem;
       margin-top: 0;
-      margin-bottom: 2.5rem; /* Espaçamento acima do badge */
-      color: #d4c5a9; /* Cor base (var(--stone)) */
+      margin-bottom: 2.5rem;
+      color: #d4c5a9;
       font-weight: 500;
       font-size: 1rem;
       text-decoration: none;
       transition: color 0.3s ease;
     }
     .teaser-instagram-link:hover {
-      color: #c9a84c; /* Cor de hover (var(--gold)) */
+      color: #c9a84c;
     }
     .teaser-instagram-link svg {
-      fill: currentColor; /* Herda a cor do link */
+      fill: currentColor;
       width: 20px;
       height: 20px;
     }
@@ -204,13 +206,12 @@
       backdrop-filter: blur(8px);
       box-shadow: 0 10px 30px rgba(0,0,0,0.5);
       
-      /* Estilos de Texto e Fonte */
-      color: #c9a84c; /* var(--gold) */
+      color: #c9a84c;
       letter-spacing: 0.15em;
       text-transform: uppercase;
       font-size: 0.95rem;
       font-weight: 600;
-      white-space: nowrap; /* FORÇA O TEXTO EM UMA ÚNICA LINHA */
+      white-space: nowrap;
     }
 
     /* Responsividade para telas menores */
@@ -230,7 +231,6 @@
       .teaser-text-box {
         text-align: center;
       }
-      /* Em telas pequenas, permitimos rolagem caso a tela seja muito baixa */
       html, body {
         height: auto;
         min-height: 100vh;
@@ -239,10 +239,8 @@
       .teaser-main {
         padding: 6rem 0 3rem 0;
       }
-      
-      /* Re-alinha o badge no mobile */
       .teaser-badge {
-          white-space: normal; /* Permite quebrar linha em telas muito pequenas */
+          white-space: normal;
           padding: 1rem 1.5rem;
       }
     }
@@ -260,7 +258,7 @@
   </header>
 
   <main class="teaser-main">
-    <div class="teaser-bg"></div>
+    <div class="teaser-bg" id="dynamicBg"></div>
     <div class="teaser-overlay"></div>
 
     <div class="teaser-content">
@@ -274,7 +272,7 @@
         <h1 class="hero-title">Park Portais<br>Roncador</h1>
         <p class="hero-sub">Onde a natureza selvagem encontra a mística e a beleza da Serra do Roncador</p>
         
-        <a href="https://www.instagram.com/parkportaisdoroncador/" target="_blank" rel="noopener" class="teaser-instagram-link">
+        <a href="https://instagram.com/parkportaisroncador" target="_blank" rel="noopener" class="teaser-instagram-link">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0 3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
             @parkportaisroncador
         </a>
@@ -288,5 +286,29 @@
   </main>
 
   <script src="script.js"></script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // 1. Defina aqui os caminhos das suas imagens JPG
+      const bgImages = [
+        'assets/hero/hero2.jpg',
+        'assets/hero/hero3.jpg',
+        'assets/hero/hero4.jpg',
+        'assets/hero/hero5.jpg',
+        'assets/hero/hero6.jpg',
+        'assets/hero/hero7.jpg'
+        // Se tiver mais, basta adicionar seguindo o padrão, ex: 'assets/hero/hero4.jpg'
+      ];
+      
+      let currentIndex = 0;
+      const bgElement = document.getElementById("dynamicBg");
+      
+      // 2. Função que troca a imagem a cada 3 segundos (3000ms)
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % bgImages.length;
+        bgElement.style.backgroundImage = `url('${bgImages[currentIndex]}')`;
+      }, 3000); // <- Você pode alterar o tempo aqui se desejar
+    });
+  </script>
 </body>
 </html>
